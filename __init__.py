@@ -1,7 +1,7 @@
 from flask import Flask, jsonify
 
 app = Flask(__name__)
-app['SECRET_KEY'] = "secretkey123"
+app.config['SECRET_KEY'] = "secretkey123"
 
 @app.route("/")  # this sets the route to this page
 def home():
